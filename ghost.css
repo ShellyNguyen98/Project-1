@@ -92,6 +92,7 @@ hr {
   height: 380px;
 }
 
+/* Restaurant name and rating stars - class*/
 .Name,
 .LName {
     color: black;
@@ -101,4 +102,9 @@ hr {
 
 #Nam {
     font-size: large;
+}
+
+.subtitle {
+  font: bolder;
+  font-size: xx-large;
 }
