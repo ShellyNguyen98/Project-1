@@ -7,7 +7,7 @@
 $('#search').click(() => {
     event.preventDefault()
     let stock = $('#stock').val().toUpperCase()
-    let restaurant = $('#food').val()
+    let restaurant = $('#city').val()
     console.log(stock)
     axios.get(`https://finnhub.io/api/v1/stock/profile2?symbol=${stock}&token=bsk4nnvrh5rachpnrlt0`)
         .then(res => {
@@ -27,16 +27,34 @@ $('#search').click(() => {
     axios.get(`https://finnhub.io/api/v1/quote?symbol=${stock}&token=bsk4nnvrh5rachpnrlt0`)
         .then(res => {
             console.log(res)
+            let change = (((res.data.c - res.data.o) / res.data.o) * 100).toFixed(2)
+            let changeInt = parseFloat(change)
             $('#stockStats').html(`
             <p>Current Stock Price: ${res.data.c}<p>
             <p>Opening Stock Price: ${res.data.o}<p>
-            <p>% Change: ${(((res.data.c - res.data.o) / res.data.o) * 100).toFixed(2)}%<p>
-        `)
-        })
+            <p>% Change: ${change}%</p>
+            `
+            )
+            if (changeInt <= 0) {
+                search1Price()
+            }
+            else if (changeInt <= 1) {
+                search2Price()
+            }
+            else if (changeInt <= 3) {
+                search3Price()
+            }
+            else {
+                search4Price()
+            }})
+        }) 
+
+
         .catch(err => {
             console.log(err)
         })
-})
+ 
+
 
 
 
@@ -78,7 +96,6 @@ function search2Price() {
         .then(res => {
             console.log(res)
             for (let i = 0; i < res.data.businesses.length; i++) {
-                //console.log(res.data.businesses[i].image_url)
                 $('#foodSearch').append(`
                  <img class="picture" src= "${res.data.businesses[i].image_url}">
                 <a href="${res.data.businesses[i].url}">Name: ${res.data.businesses[i].name}</a>
@@ -148,17 +165,18 @@ function search4Price() {
     $('#foodSearch').empty()
 }
 
-if () {
-    search1Price()
-}
-else if () {
-    search2Price()
-}
-else if () {
-    search3Price()
-}
-else {
-    search4Price
-}
+// conditional statements
+// if () {
+//     search1Price()
+// }
+// else if () {
+//     search2Price()
+// }
+// else if () {
+//     search3Price()
+// }
+// else {
+//     search4Price()
+// }
 
 
