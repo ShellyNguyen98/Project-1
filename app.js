@@ -41,7 +41,7 @@ $('#search').click(() => {
 
 
 function search1Price() {
-    let restaurant = $('#food').val()
+    let restaurant = $('#city').val()
     console.log(restaurant)
     axios.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${restaurant}&price=1&limit=5`, {
     headers: {
@@ -68,7 +68,7 @@ function search1Price() {
 }
 
 function search2Price() {
-    let restaurant = $('#food').val()
+    let restaurant = $('#city').val()
     console.log(restaurant)
     axios.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${restaurant}&price=2&limit=5`, {
     headers: {
@@ -95,7 +95,7 @@ function search2Price() {
 }
 
 function search3Price() {
-    let restaurant = $('#food').val()
+    let restaurant = $('#city').val()
     console.log(restaurant)
     axios.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${restaurant}&price=3&limit=5`, {
     headers: {
@@ -122,7 +122,7 @@ function search3Price() {
 }
 
 function search4Price() {
-    let restaurant = $('#food').val()
+    let restaurant = $('#city').val()
     console.log(restaurant)
     axios.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${restaurant}&price=4&limit=5`, {
     headers: {
@@ -148,5 +148,17 @@ function search4Price() {
     $('#foodSearch').empty()
 }
 
+if () {
+    search1Price()
+}
+else if () {
+    search2Price()
+}
+else if () {
+    search3Price()
+}
+else {
+    search4Price
+}
 
 
