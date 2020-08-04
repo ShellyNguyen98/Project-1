@@ -44,12 +44,18 @@ $('#searchBtn').click(function(){
     })
       .then(res => {
         console.log(res.data.businesses)
-        document.getElementById('locationDisplay').innerHTML = `
-          <h1>${res.data.businesses[0].name}</h1>
-          <h2>Rating: ${res.data.businesses[0].rating}</h2>
-          <h3>Price: ${res.data.businesses[0].price}</h3>
-          <h3>image: <img src = '${res.data.businesses[0].image_url}'></h3>
-        `
+
+        
+        for(let i = 0; i < res.data.businesses.length; i++)
+        {
+
+          $('#locationDisplay').append(`
+          <h4>${res.data.businesses[i].name}</h4>
+          <p>Rating: ${res.data.businesses[i].rating}</p>
+          <p>Price: ${res.data.businesses[i].price}</p>
+          <p>image: <img src = '${res.data.businesses[i].image_url}'></p>
+        `)
+      }
       })
       .catch(err => console.error(err))
     })
