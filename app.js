@@ -1,7 +1,7 @@
 //bsk4nnvrh5rachpnrlt0 finnhub key
 //gSvqKHVo4SqT2L7QNABBlQQNcVJp8c16F0RBXZHqryC6qvjTgTbDHpTnN1ltdJDPeunYBd_rxAersy_heJPvUmjxnhJhbay0xdwJp0hMtCfwxyt-JntJ-62AjHgoX3Yx yelp key
 
-//Make functions for all $ sign range and to list by rating 
+
 
 
 $('#search').click(() => {
@@ -122,7 +122,6 @@ function search3Price() {
         .then(res => {
             console.log(res)
             for (let i = 0; i < res.data.businesses.length; i++) {
-                //console.log(res.data.businesses[i].image_url)
                 $('#foodSearch').append(`
                  <img class="picture" src= "${res.data.businesses[i].image_url}">
                 <a href="${res.data.businesses[i].url}">Name: ${res.data.businesses[i].name}</a>
@@ -165,18 +164,6 @@ function search4Price() {
     $('#foodSearch').empty()
 }
 
-// conditional statements
-// if () {
-//     search1Price()
-// }
-// else if () {
-//     search2Price()
-// }
-// else if () {
-//     search3Price()
-// }
-// else {
-//     search4Price()
-// }
+
 
 
