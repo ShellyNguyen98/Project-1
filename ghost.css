@@ -108,3 +108,15 @@ hr {
   font: bolder;
   font-size: xx-large;
 }
+
+.img {
+  align-content: center;
+  height: 150px;
+  width: 150px;
+}
+
+
+/* search button id=Search, 
+stock name id=Title,
+info of stock class=post
+yelp recommendation info class= Content */
