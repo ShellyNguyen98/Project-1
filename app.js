@@ -7,7 +7,7 @@
 $('#search').click(() => {
     event.preventDefault()
     let stock = $('#stock').val().toUpperCase()
-    let restaurant = $('#food').val()
+    let restaurant = $('#city').val()
     console.log(stock)
     axios.get(`https://finnhub.io/api/v1/stock/profile2?symbol=${stock}&token=bsk4nnvrh5rachpnrlt0`)
         .then(res => {
