@@ -110,13 +110,26 @@ hr {
 }
 
 .img {
-  align-content: center;
-  height: 150px;
-  width: 150px;
+height: 300px;
+width: 490px;
+
+
+  /* width: 50%; */
 }
+
+.footer {
+  font-size: large;
+  color: #060606;
+}
+
 
 
 /* search button id=Search, 
 stock name id=Title,
 info of stock class=post
-yelp recommendation info class= Content */
+yelp recommendation info class= Content
+company enter searc id=Company
+zipcode id = Zipcode */
+
+/* 324-243 yelp
+200-150 */
