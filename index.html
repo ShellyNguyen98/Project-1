@@ -1,54 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<<<<<<< HEAD
-</head>
-<body>
-    
-=======
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html>
 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bite-Wallet</title>
+    <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="./ghost.css">
+  </head>
 
+ <body>
+   
+  <section class="hero is-medium">
+    <div class="hero-head">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
 
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+            </div>
 
-    <form>
-        <p>
-            <label for="stock">Search Stock</label>
-            <input type="text" name="stock" id="stock">
-            <label for="city">Your Location</label>
-            <input type="text" name="city" id="city">
-        </p>
-        <p>
-            <button id="search">Search</button>
-        </p>
-    </form>
-        
-    <div id="stockSearch"></div>
-    <div id="stockStats"></div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <img src="./logo/bite-wallet.jpg" width="150" height="40">
+        <h2 class="subtitle">
+          Bite-Wallet
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section class="blog-posts">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="columns featured-post is-multiline">
+            <div class="column is-12 post">
+              <article class="columns featured">
+                <div class="column is-7 post-img ">
+                  <form>
+                        <div class="field is-grouped">
+                          
+                          
 
-    <!-- <form>
-        <p>
-            <label for="food">Search Restaurants</label>
-            <input type="text" name="food" id="food">
-        </p>
-        <p>
-            <button id="search2">Search</button>
-        </p>
-    </form> -->
-        
-    <div id="foodSearch"></div>
-    <div id="foodStats"></div>
+                            <p class="control is-small">
+                              <input id="Stock" class="input" type="text" placeholder="Enter Company's Name">
+                            </p>
+                            <p class="control is-small">
+                              <input id="city" class="input" type="text" placeholder="Enter Zipcode">
+                            </p>
+                            <p class="control">
+                                <a id ="Search" class="button is-primary">
+                                    Search
+                                </a>
+                            </p>
+                          
+                        </div>
+                      </form>
 
+                      <br>
+                 
+                 
+                      <img id="stockImg" class = "img" src="https://cdn.emk.dev/templates/featured-image.png" alt="Company Logo">
+                
+                
+                    <div class="column is-7 featured-content va">
+                  
+                      <!-- <div id="stockSearch"></div>
+                      <div id="stockStats"></div> -->
 
+                    <h3 class="heading post-category">Stock Info</h3>
+                    <h1 id="title" class="title post-title">Stock Name</h1>
+                    <p id="listInfo" class="post-excerpt"> List of info </p>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="app.js"></script>
->>>>>>> 98e5a9bfe7d725e521ccb50d59392af638b30fae
+                    <div id="stockSearch"></div>
+                    <div id="stockStats"></div>
+                    
+                  </div>
+
+                </div>
+              </article>
+            </div>
+          </div>
+          <hr>
+          <h3 id="yelp">Yelp recommendation</h3>
+          <div class="columns is-multiline">
+            <div class="column post is-6">
+              <article class="columns is-multiline">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                        </div>
+                        <div class="media-content">
+                          <p id="Nam" class="Name is-4">Res' Name</p>
+                          <p class="LName is-6">rating star</p>
+                        </div>
+                      </div>
+                      <div class="Content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+              </article>
+            </div>
+            <div class="column post is-6">
+              <article class="columns is-multiline">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                        </div>
+                        <div class="media-content">
+                          <p id ="Nam" class="Name is-4">Res' Name</p>
+                          <p class="LName is-6">rating star</p>
+                        </div>
+                      </div>
+                  
+                      <div class="Content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+              </article>
+            </div>
+            <div class="column post is-4">
+              <article class="columns is-multiline">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                        </div>
+                        <div class="media-content">
+                          <p id="nam" class="Name is-4">John Smith</p>
+                          <p class="Lname is-6">@johnsmith</p>
+                        </div>
+                      </div>
+                  
+                      <div class="Content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+              </article>
+            </div>
+            <div class="column post is-4">
+              <article class="columns is-multiline">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                        </div>
+                        <div class="media-content">
+                          <p id ="Nam" class="Name is-4">John Smith</p>
+                          <p class="Lname is-6">@johnsmith</p>
+                        </div>
+                      </div>
+                      <div class="Content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+              </article>
+            </div>
+            <div class="column post is-4">
+              <article class="columns is-multiline">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                        </div>
+                        <div class="media-content">
+                          <p id="Nam" class="Name is-4">John Smith</p>
+                          <p class="LName is-6">rating star</p>
+                        </div>
+                      </div>
+                  
+                      <div class="Content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <footer class="footer is-black">
+    <div class="content has-text-centered">
+      <p>
+        Made by group 3
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+
 </body>
 </html>
