@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
@@ -8,8 +8,9 @@
     <title>Bite-Wallet</title>
     <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="./ghost.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
   </head>
+<body>
 
   <section class="hero is-medium">
     <div class="hero-head">
@@ -33,10 +34,13 @@
                 </a>
               </div>
             </div>
+          
           </div>
         </nav>
+      
       </div>
     </div>
+    
     <div class="hero-body">
       <div class="container has-text-centered">
         <img src="./logo/bite-wallet.jpg" width="150" height="40">
@@ -46,6 +50,7 @@
       </div>
     </div>
   </section>
+ 
   <section class="blog-posts">
     <div class="container">
       <div class="columns">
@@ -54,34 +59,39 @@
             <div class="column is-12 post">
               <article class="columns featured">
                 <div class="column is-7 post-img ">
-                        <div class="field is-grouped">
+                    
+                    <form>
+                        <div class="field is-grouped">                         
                             <p class="control is-small">
-                              <input id="Company" class="input" type="text" placeholder="Enter Company's Name">
+                              <input id="stock" class="input" type="text" placeholder="Enter Company's Name">
                             </p>
                             <p class="control is-small">
-                              <input id="Zipcode" class="input" type="text" placeholder="Enter Zipcode">
+                              <input id="city" class="input" type="text" placeholder="Enter Zipcode">
                             </p>
                             <p class="control">
-                                <a id ="Search" class="button is-primary">
+                                <a id ="search" class="button is-primary">
                                     Search
                                 </a>
                             </p>
                         </div>
-                  <img class = "img" src="https://cdn.emk.dev/templates/featured-image.png" alt="">
+                      </form>
+                      
+                      <br>
+                
+               <img id="stockIng" class = "img" src="https://cdn.emk.dev/templates/featured-image.png" alt="">
                 </div>
+                
                 <div class="column is-7 featured-content va">
-                  <div>
-                    <h3 class="heading post-category">Stock Info</h3>
-                    <h1 id="title" class="title post-title">Stock Name</h1>
-                    <p id="listInfo" class="post-excerpt"> List of info </p>
-                    
-                  </div>
-
+                  <div id="stockSearch"></div>
+                  <div id="stockStats"></div>
                 </div>
+
               </article>
             </div>
           </div>
+          
           <hr>
+
           <h3 id="yelp">Yelp recommendation</h3>
           <div class="columns is-multiline">
             <div class="column post is-6">
@@ -92,6 +102,7 @@
                         <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                       </figure>
                     </div>
+                    
                     <div class="card-content">
                       <div class="media">
                         <div class="media-left">
@@ -101,6 +112,7 @@
                           <p class="LName is-6">rating star</p>
                         </div>
                       </div>
+                      
                       <div class="Content">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Phasellus nec iaculis mauris. <a>@bulmaio</a>.
@@ -112,6 +124,7 @@
                   </div>
               </article>
             </div>
+            
             <div class="column post is-6">
               <article class="columns is-multiline">
                 <div class="card">
@@ -141,6 +154,7 @@
                   </div>
               </article>
             </div>
+            
             <div class="column post is-4">
               <article class="columns is-multiline">
                 <div class="card">
@@ -170,6 +184,7 @@
                   </div>
               </article>
             </div>
+            
             <div class="column post is-4">
               <article class="columns is-multiline">
                 <div class="card">
@@ -178,6 +193,7 @@
                         <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                       </figure>
                     </div>
+                    
                     <div class="card-content">
                       <div class="media">
                         <div class="media-left">
@@ -187,6 +203,7 @@
                           <p class="Lname is-6">@johnsmith</p>
                         </div>
                       </div>
+                      
                       <div class="Content">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Phasellus nec iaculis mauris. <a>@bulmaio</a>.
@@ -198,6 +215,7 @@
                   </div>
               </article>
             </div>
+            
             <div class="column post is-4">
               <article class="columns is-multiline">
                 <div class="card">
@@ -240,3 +258,10 @@
       </p>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+
+  </body>
+  </html>
