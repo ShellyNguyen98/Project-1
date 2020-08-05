@@ -1,11 +1,6 @@
 //bsk4nnvrh5rachpnrlt0 finnhub key
 //gSvqKHVo4SqT2L7QNABBlQQNcVJp8c16F0RBXZHqryC6qvjTgTbDHpTnN1ltdJDPeunYBd_rxAersy_heJPvUmjxnhJhbay0xdwJp0hMtCfwxyt-JntJ-62AjHgoX3Yx yelp key
 
-
-
-//global variables
-
-//stock search
 $('#Search').click(() => {
     event.preventDefault()
     let stock = $('#stock').val().toUpperCase()
@@ -47,13 +42,13 @@ $('#Search').click(() => {
             else {
                 search4Price()
             }})
-        }) 
+       
 
 
         .catch(err => {
             console.log(err)
         })
- 
+  }) 
 
 
 
@@ -144,36 +139,6 @@ function search3Price () {
         })
     $('#foodSearch').empty()
 }
-// $('#search2').click(() => {
-//     event.preventDefault ()
-//     let restaurant = $('#food').val()
-//     console.log(restaurant)
-//     axios.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=${restaurant}&price=3&limit=5`, {
-//     headers: {
-//     'Authorization': `Bearer lbogapYHxff9h2fSNoWEoM420b8mRfQ4JBsiphR6BtaNKlmR51XQt3wCm2ocKhlkvpnv_46BvAcMuB_cTrv7pmRtuMMplxzaBAA_nAU57ttpRZlv9y05lvxWcXUoX3Yx`
-//     }
-//     })
-//         .then(res => {
-//             console.log(res)
-//             for (let i = 0; i < res.data.businesses.length; i++) {
-//                 $('#foodSearch').append(`
-//                 <p>
-//                     <img class="picture" src= "${res.data.businesses[i].image_url}">
-//                 </p>
-//                 <p>
-//                     <a href="${res.data.businesses[i].url}">Name: ${res.data.businesses[i].name}</a>
-//                 </p>
-//                 <p>Type: ${res.data.businesses[i].categories[0].title}</p>
-//                 <p>Rating: ${res.data.businesses[i].rating}</p>
-//                 <p>Review Count: ${res.data.businesses[i].review_count}</p>
-//                 `)
-//             }
-//         })
-//         .catch(err => {
-//             console.error(err)
-//         })
-//     $('#foodSearch').empty()
-// })
 
 function search4Price() {
     let restaurant = $('#city').val()
