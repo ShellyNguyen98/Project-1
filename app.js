@@ -42,13 +42,13 @@ $('#Search').click(() => {
             else {
                 search4Price()
             }})
-       
+        }) 
 
 
         .catch(err => {
             console.log(err)
         })
-  }) 
+ 
 
 
 
@@ -64,14 +64,16 @@ function search1Price() {
         .then(res => {
             console.log(res)
             for (let i = 0; i < res.data.businesses.length; i++) {
-                //console.log(res.data.businesses[i].image_url)
-                $('#foodSearch').append(`
-                 <img class="picture" src= "${res.data.businesses[i].image_url}">
-                <a href="${res.data.businesses[i].url}">Name: ${res.data.businesses[i].name}</a>
-                <p>Type: ${res.data.businesses[i].categories[0].title}</p>
-                <p>Rating: ${res.data.businesses[i].rating}</p>
-                <p>Review Count: ${res.data.businesses[i].review_count}</p>
+                $(`#img${i}`).attr('src', res.data.businesses[i].image_url)
+                $(`#name${i}`).html(`
+                <a href="${res.data.businesses[i].url}" target="_blank">${res.data.businesses[i].name}</a>
                 `)
+                $(`#content${i}`).html(`
+                 <p>Type: ${res.data.businesses[i].categories[0].title}</p>
+                 <p>Rating: ${res.data.businesses[i].rating}</p>
+                 <p>Review Count: ${res.data.businesses[i].review_count}</p>
+                `)
+                
             }
         })
         .catch(err => {
@@ -91,23 +93,21 @@ function search2Price () {
         .then(res => {
             console.log(res)
             for (let i = 0; i < res.data.businesses.length; i++) {
-                $('#foodSearch').append(`
-                <p>
-                    <img class="picture" src= "${res.data.businesses[i].image_url}">
-                </p>
-                <p>
-                    <a href="${res.data.businesses[i].url}">Name: ${res.data.businesses[i].name}</a>
-                </p>
-                <p>Type: ${res.data.businesses[i].categories[0].title}</p>
-                <p>Rating: ${res.data.businesses[i].rating}</p>
-                <p>Review Count: ${res.data.businesses[i].review_count}</p>
+                $(`#img${i}`).attr('src', res.data.businesses[i].image_url)
+                $(`#name${i}`).html(`
+                <a href="${res.data.businesses[i].url}" target="_blank">${res.data.businesses[i].name}</a>
                 `)
+                $(`#content${i}`).html(`
+                 <p>Type: ${res.data.businesses[i].categories[0].title}</p>
+                 <p>Rating: ${res.data.businesses[i].rating}</p>
+                 <p>Review Count: ${res.data.businesses[i].review_count}</p>
+                `)
+                
             }
         })
         .catch(err => {
             console.error(err)
         })
-    $('#foodSearch').empty()
 }
 
 function search3Price () {
@@ -121,17 +121,16 @@ function search3Price () {
         .then(res => {
             console.log(res)
             for (let i = 0; i < res.data.businesses.length; i++) {
-                $('#foodSearch').append(`
-                <p>
-                    <img class="picture" src= "${res.data.businesses[i].image_url}">
-                </p>
-                <p>
-                    <a href="${res.data.businesses[i].url}">Name: ${res.data.businesses[i].name}</a>
-                </p>
-                <p>Type: ${res.data.businesses[i].categories[0].title}</p>
-                <p>Rating: ${res.data.businesses[i].rating}</p>
-                <p>Review Count: ${res.data.businesses[i].review_count}</p>
+                $(`#img${i}`).attr('src', res.data.businesses[i].image_url)
+                $(`#name${i}`).html(`
+                <a href="${res.data.businesses[i].url}" target="_blank">${res.data.businesses[i].name}</a>
                 `)
+                $(`#content${i}`).html(`
+                 <p>Type: ${res.data.businesses[i].categories[0].title}</p>
+                 <p>Rating: ${res.data.businesses[i].rating}</p>
+                 <p>Review Count: ${res.data.businesses[i].review_count}</p>
+                `)
+                
             }
         })
         .catch(err => {
@@ -151,20 +150,21 @@ function search4Price() {
         .then(res => {
             console.log(res)
             for (let i = 0; i < res.data.businesses.length; i++) {
-                //console.log(res.data.businesses[i].image_url)
-                $('#foodSearch').append(`
-                 <img class="picture" src= "${res.data.businesses[i].image_url}">
-                <a href="${res.data.businesses[i].url}">Name: ${res.data.businesses[i].name}</a>
-                <p>Type: ${res.data.businesses[i].categories[0].title}</p>
-                <p>Rating: ${res.data.businesses[i].rating}</p>
-                <p>Review Count: ${res.data.businesses[i].review_count}</p>
+                $(`#img${i}`).attr('src', res.data.businesses[i].image_url)
+                $(`#name${i}`).html(`
+                <a href="${res.data.businesses[i].url}" target="_blank">${res.data.businesses[i].name}</a>
                 `)
+                $(`#content${i}`).html(`
+                 <p>Type: ${res.data.businesses[i].categories[0].title}</p>
+                 <p>Rating: ${res.data.businesses[i].rating}</p>
+                 <p>Review Count: ${res.data.businesses[i].review_count}</p>
+                `)
+                
             }
         })
         .catch(err => {
             console.error(err)
         })
-    $('#foodSearch').empty()
 }
 
 
