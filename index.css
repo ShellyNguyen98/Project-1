@@ -122,14 +122,11 @@ width: 490px;
   color: #060606;
 }
 
-
-
-/* search button id=Search, 
-stock name id=Title,
-info of stock id= listInfo
-yelp recommendation info class= Content
-company enter searc id=Company
-zipcode id = Zipcode */
+.picture {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
 
 /* 324-243 yelp
 200-150 */
