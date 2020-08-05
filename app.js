@@ -6,7 +6,7 @@
 //global variables
 
 //stock search
-$('#search').click(() => {
+$('#Search').click(() => {
     event.preventDefault()
     let stock = $('#stock').val().toUpperCase()
     let restaurant = $('#city').val()
@@ -14,14 +14,12 @@ $('#search').click(() => {
     axios.get(`https://finnhub.io/api/v1/stock/profile2?symbol=${stock}&token=bsk4nnvrh5rachpnrlt0`)
         .then(res => {
             console.log(res)
-            $('#stockSearch').html(`
+            var photo = `${res.data.logo}`
+            $('#stockImg').attr('src', photo)
+            $('#stockName').html(`
             <p>
-                <img src="${res.data.logo}" alt="Company Logo">
-            </p>
-            <p>
-                <a href="${res.data.weburl}">Stock Name: ${res.data.name}</a>
-            </p>
-        `)
+         <a href="${res.data.weburl}">Stock Name: ${res.data.name} </a>
+         </p> `)
         })
         .catch(err => {
             console.log(err)
