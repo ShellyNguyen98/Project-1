@@ -8,11 +8,11 @@
     <title>Bite-Wallet</title>
     <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="./ghost.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
 
- <body>
-   
+<body>
+  <!-- Navbar -->
   <section class="hero is-medium">
     <div class="hero-head">
       <div class="container">
@@ -22,6 +22,9 @@
             <div class="navbar-start">
               <a class="navbar-item is-active">
                 Home
+              </a>
+              <a href="Aboutus.html" class="navbar-item is-active">
+                About
               </a>
             </div>
 
@@ -41,13 +44,15 @@
     </div>
     <div class="hero-body">
       <div class="container has-text-centered">
-        <img src="./logo/OfficialLogo.jpg" width="30%" height="100%">
+        <img src="./logo/bite-wallet.jpg" width="150" height="40">
         <h2 class="subtitle">
           Bite-Wallet
         </h2>
       </div>
     </div>
   </section>
+  
+
   <section class="blog-posts">
     <div class="container">
       <div class="columns">
@@ -56,44 +61,34 @@
             <div class="column is-12 post">
               <article class="columns featured">
                 <div class="column is-7 post-img ">
+
                   <form>
                         <div class="field is-grouped">
-                          
-                          
-
                             <p class="control is-small">
-                              <input id="Stock" class="input" type="text" placeholder="Enter Company's Name">
+                              <input id="stock" class="input" type="text" placeholder="Enter Company's Name">
                             </p>
                             <p class="control is-small">
-                              <input id="city" class="input" type="text" placeholder="Enter Zipcode">
+                              <input id="city" class="input" type="text" placeholder="Search City">
                             </p>
                             <p class="control">
                                 <a id ="Search" class="button is-primary">
                                     Search
                                 </a>
                             </p>
-                          
                         </div>
                       </form>
-
+                     
                       <br>
-                 
-                 
-                      <img id="stockImg" class = "img" src="https://cdn.emk.dev/templates/featured-image.png" alt="Company Logo">
-                
-                
-                  <div class="column is-7 featured-content va">
-                  
-                      <div id="stockSearch"></div>
-                      <div id="stockStats"></div>
-
-                       <h3 class="heading post-category">Stock Info</h3>
-                       <h1 id="title" class="title post-title">Stock Name</h1>
-                       <p id="listInfo" class="post-excerpt"> List of info </p>
-
-                    
-                    
+                      <div id="stockName" style="text-align: center;"></div>
+                  <img id="stockImg" class = "img" src="https://cdn.emk.dev/templates/featured-image.png" alt="">
+                </div>
+                <div class="column is-7 featured-content va">
+                  <div id="stockSearch">
+                    <!-- <h3 class="heading post-category">Stock Info</h3>
+                    <h1 id="title" class="title post-title">Stock Name</h1>
+                    <p id="listInfo" class="post-excerpt"> List of info </p>  -->
                   </div>
+                  <div id="stockStats"></div>
 
                 </div>
               </article>
@@ -257,9 +252,10 @@
         Made by group 3
       </p>
     </div>
-  </footer>
 
+  </footer> 
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="app.js"></script>
-
-</body>
-</html>
+ </body>
+ </html>
