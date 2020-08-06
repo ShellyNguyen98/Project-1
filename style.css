@@ -25,7 +25,6 @@ hr {
 
 .hero {
   background: #060606;
-
 }
 
 .title,
@@ -56,7 +55,7 @@ hr {
 .blog-posts {
   min-height: 100vh;
   background: #191b1f;
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 10rem;
 }
 
@@ -109,8 +108,7 @@ hr {
 
 .subtitle {
   font: bolder;
-  font-size: x-large;
-  font-style: italic;
+  font-size: xx-large;
 }
 
 .img {
@@ -126,17 +124,17 @@ width: 490px;
   color: #060606;
 }
 
-.picture {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
 
-/* 324-243 (card content: w-361.98 h-219;)yelp 125.31-168.98
-200-150 (w-225.31  h-288)*/
 
-/* how we overcome the challenge */
-/* demonstrate deploy version */
+/* search button id=Search, 
+stock name id=Title,
+info of stock id= listInfo
+yelp recommendation info class= Content
+company enter searc id=Company
+zipcode id = Zipcode */
+
+/* 324-243 yelp
+200-150 */
 
 #stockStats {
   color: white
