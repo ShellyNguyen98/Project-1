@@ -136,3 +136,10 @@ width: 490px;
 /* how we overcome the challenge */
 /* demonstrate deploy version */
 
+#stockStats {
+  color: white
+}
+
+#stockName {
+  text-align: center;
+}
