@@ -1,56 +1,51 @@
 <!DOCTYPE html>
-<html>
+​
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bite-Wallet</title>
-
   <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
 </head>
 <body>
-​
   <section class="hero is-small">
     <div class="hero-head">
       <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
-​
           <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
               <a class="navbar-item is-active">
                 Home
               </a>
               <a href="Aboutus.html" class="navbar-item is-active">
-                About Us
+                About
               </a>
             </div>
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a href="#">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </div>
-            </div>
+            <div class="navbar-end"></div>
           </div>
 ​
         </nav>
       </div>
     </div>
-​
+
     <div class="hero-body">
       <div class="container has-text-centered">
-        <img src="./logo/OfficialLogo.jpg" width="20%">
+        <img src="./logo/OfficialLogo.jpg" width="30%">
         <h2 class="subtitle">
           Bite-Wallet
         </h2>
       </div>
     </div>
-  </section>
+  <!-- </section> -->
 ​
   <section class="blog-posts">
     <div class="container">
@@ -59,12 +54,12 @@
           <div class="columns featured-post is-multiline">
             <div class="column is-12 post">
               <article class="columns featured">
-                <div class="column is-7 post-img has-text-centered">
-​
-                  <form id= "change">
+                <div class="column is-7 post-img">
+
+                  <form id="tryingCenter">
                     <div class="field is-grouped has-text-centered">
                       <p class="control is-small">
-                        <input id="stock" class="input" type="text" placeholder="Enter Company's Name">
+                        <input id="stock" class="input" type="text" placeholder="Enter Company's Ticker">
                       </p>
                       <p class="control is-small">
                         <input id="city" class="input" type="text" placeholder="Enter Zipcode">
@@ -81,9 +76,9 @@
                     <img id="stockImg" class="img hide" src="https://cdn.emk.dev/templates/featured-image.png" alt="Company Logo">
                   </div>
                 </div>
-​
-                <div class="column is-7 featured-content va has-text-centered">
-​
+
+                <div class="column is-7 featured-content va">
+
                   <div id="stockSearch"></div>
                   <div id="stockStats"></div>
 ​
@@ -93,7 +88,8 @@
             </div>
           </div>
           <hr>
-          <h3 id="yelp">Yelp Recommendation</h3>
+          <h3 id="yelp">Yelp Recommendation <i class="fa fa-yelp"></i></h3>
+          
           <div class="columns is-multiline">
 ​
             <div class="column post is-6">
@@ -222,33 +218,10 @@
           </div>
         </div>
       </div>
-​
   </section>
-​
-  <footer class="footer is-black">
-    <div class="content has-text-centered">
-      <p>
-        Made by group 3
-      </p>
-    </div>
-  </footer>
-​
+
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

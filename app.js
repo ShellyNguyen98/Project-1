@@ -1,6 +1,3 @@
-//bsk4nnvrh5rachpnrlt0 finnhub key
-//gSvqKHVo4SqT2L7QNABBlQQNcVJp8c16F0RBXZHqryC6qvjTgTbDHpTnN1ltdJDPeunYBd_rxAersy_heJPvUmjxnhJhbay0xdwJp0hMtCfwxyt-JntJ-62AjHgoX3Yx yelp key
-
 $('#search').click(() => {
     event.preventDefault()
     $(`.hide`).removeClass('hide')
@@ -14,7 +11,7 @@ $('#search').click(() => {
             console.log(res)
             $('#stockImg').attr('src', res.data.logo)
             $('#stockName').html(`
-                <a href="${res.data.weburl}" target="_blank">Stock Name: ${res.data.name}</a>
+                <a href="${res.data.weburl}" target="_blank">${res.data.name}</a>
             `)
         })
         .catch(err => {
@@ -28,18 +25,23 @@ $('#search').click(() => {
             $('#stockStats').html(`
             <p>Current Stock Price: ${res.data.c}</p>
             <p>Opening Stock Price: ${res.data.o}</p>
-            <p>% Change: ${change}%</p>
+            <p>% Change: <span id="stockChange">${change}%</span></p>
         `)
+
 
         let calculatedPrice = 0
         if (changeInt <= 0) {
             calculatedPrice = 1
+            $(`#stockChange`).addClass('red')
         } else if (changeInt <= 1) {
             calculatedPrice = 2
+            $(`#stockChange`).addClass('green')
         } else if (changeInt <= 2) {
             calculatedPrice = 3
+            $(`#stockChange`).addClass('green')
         } else {
             calculatedPrice = 4
+            $(`#stockChange`).addClass('green')
         }
 
         searchOnPrice (calculatedPrice)
@@ -65,14 +67,22 @@ function searchOnPrice (price) {
                 //console.log(res.data.businesses[i].image_url)
                 $(`#img${i}`).attr('src', res.data.businesses[i].image_url)
                 $(`#name${i}`).html(`
-                    <a href="${res.data.businesses[i].url}" target="_blank">${res.data.businesses[i].name}</a>
+                    <a class="resName" href="${res.data.businesses[i].url}" target="_blank">${res.data.businesses[i].name}</a>
                 `)
                 $(`#content${i}`).html(`
-                    <p>Type: ${res.data.businesses[i].categories[0].title}</p>
-                    <p>Rating: ${res.data.businesses[i].rating}</p>
-                    <p>Review Count: ${res.data.businesses[i].review_count}</p>
-                    <p>Price: ${res.data.businesses[i].price}</p>
+                    <p><span class="info">Type:</span> ${res.data.businesses[i].categories[0].title}</p>
+                    <p><span class="info">Rating:</span> ${res.data.businesses[i].rating}</p>
+                    <p><span class="info">Review Count: </span>${res.data.businesses[i].review_count}</p>
+                    <p><span class="info">Price:</span> <span class="green">${res.data.businesses[i].price}</span></p>
                 `)
+                if (price < 0) {
+                    $('.resName').addClass('poor')
+                } else if (price <= 2) {
+                    $('.resName').addClass('regular')
+                } else {
+                    $('.resName').addClass('rich')
+                }
+
             }
         })
         .catch(err => {
