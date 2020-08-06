@@ -100,7 +100,11 @@ hr {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-#Nam {
+#name0,
+#name1,
+#name2,
+#name3,
+#name4 {
     font-size: large;
 }
 
@@ -110,9 +114,8 @@ hr {
 }
 
 .img {
-height: 300px;
-width: 490px;
-
+height: 280px;
+width: 400px;
 
   /* width: 50%; */
 }
@@ -122,6 +125,20 @@ width: 490px;
   color: #060606;
 }
 
+#img0,
+#img1 {
+  height: 400px;
+  width: 100%;
+  
+}
+
+#img2,
+#img3,
+#img4 {
+  height: 300px;
+  width: 100%;
+ 
+}
 
 
 /* search button id=Search, 
