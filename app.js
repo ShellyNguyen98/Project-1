@@ -17,6 +17,7 @@ $('#search').click(() => {
         .catch(err => {
             console.log(err)
         })
+
     axios.get(`https://finnhub.io/api/v1/quote?symbol=${stock}&token=bsk4nnvrh5rachpnrlt0`)
         .then(res => {
             let change = (((res.data.c - res.data.o) / res.data.o) * 100).toFixed(2)
