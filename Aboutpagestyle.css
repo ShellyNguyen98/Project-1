@@ -1,3 +1,12 @@
+#text1 {
+    color: aquamarine;
+    text-align: center;
+}
+
+#nam {
+    color: aquamarine;
+    text-align: center;
+}
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@400;600&display=swap');
 
 .va {
@@ -7,7 +16,8 @@
 
 html {
   font-family: 'Nunito Sans', sans-serif;
-  color: white;
+  background-color: black;
+  height: 100%;
 }
 
 a {
@@ -22,6 +32,10 @@ a:hover {
 
 hr {
   background: #24272c;
+}
+
+footer {
+    background-color: black;
 }
 
 .hero {
@@ -106,20 +120,16 @@ hr {
 
 #Nam {
     font-size: large;
+    text-align: center;
 }
 
 .subtitle {
   font: bolder;
-  font-size: 60px;
-  font-family: 'Amatic SC', cursive;
 }
 
 .img {
 height: 300px;
 width: 490px;
-
-
-  /* width: 50%; */
 }
 
 .footer {
@@ -149,63 +159,4 @@ width: 490px;
   flex-basis: 250px;
   flex-grow: 0;
   flex-shrink: 0;
-}
-
-#img0,
-#img1 {
-  width: 100%;
-  height: 450px;
-  object-fit: cover; 
-}
-
-#img2,
-#img3,
-#img4 {
-  width: 100%;
-  height: 275px;
-  object-fit: cover;
-}
-
-.hide {
-  display: none;
-}
-
-#stockImg {
-  width: auto;
-}
-
-.red {
-  color: red;
-}
-
-.green {
-  color: green;
-}
-
-#tryingCenter {
-  margin-left: 4rem;
-}
-
-.resName {
-  font-size: 25px;
-  color: blue;
-  font-weight: bold;
-}
-
-.info {
-  font-weight: bold;
-  color: black;
-  font-size: 18px;
-}
-
-.poor {
-  font-family: 'Indie Flower', cursive;
-}
-
-.regular {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.rich {
-  font-family: 'Dancing Script', cursive;
 }
