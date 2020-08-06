@@ -133,3 +133,11 @@ zipcode id = Zipcode */
 
 /* 324-243 yelp
 200-150 */
+
+#stockStats {
+  color: white
+}
+
+#stockName {
+  text-align: center;
+}
