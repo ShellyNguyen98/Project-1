@@ -56,7 +56,7 @@ hr {
 .blog-posts {
   min-height: 100vh;
   background: #191b1f;
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 10rem;
 }
 
@@ -107,7 +107,8 @@ hr {
 
 .subtitle {
   font: bolder;
-  font-size: xx-large;
+  font-size: x-large;
+  font-style: italic;
 }
 
 .img {
@@ -131,4 +132,7 @@ width: 490px;
 
 /* 324-243 (card content: w-361.98 h-219;)yelp 125.31-168.98
 200-150 (w-225.31  h-288)*/
+
+/* how we overcome the challenge */
+/* demonstrate deploy version */
 
