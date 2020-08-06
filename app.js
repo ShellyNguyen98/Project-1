@@ -1,7 +1,7 @@
 //bsk4nnvrh5rachpnrlt0 finnhub key
 //gSvqKHVo4SqT2L7QNABBlQQNcVJp8c16F0RBXZHqryC6qvjTgTbDHpTnN1ltdJDPeunYBd_rxAersy_heJPvUmjxnhJhbay0xdwJp0hMtCfwxyt-JntJ-62AjHgoX3Yx yelp key
 
-$('#Search').click(() => {
+$('#search').click(() => {
     event.preventDefault()
 
     let stock = $('#stock').val().toUpperCase()
