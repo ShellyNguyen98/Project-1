@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bite-Wallet</title>
+  <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bite-Wallet</title>
-    <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="./style.css">
-  </head>
-
+</head>
 <body>
-  <!-- Navbar -->
-  <section class="hero is-medium">
+
+  <section class="hero is-small">
     <div class="hero-head">
       <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -27,24 +31,15 @@
                 About
               </a>
             </div>
-
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a href="#">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </div>
-            </div>
+            <div class="navbar-end"></div>
           </div>
         </nav>
       </div>
     </div>
+
     <div class="hero-body">
       <div class="container has-text-centered">
-        <img src="./logo/bite-wallet.jpg" width="150" height="40">
+        <img src="./logo/OfficialLogo.jpg" width="30%">
         <h2 class="subtitle">
           Bite-Wallet
         </h2>
@@ -60,27 +55,27 @@
           <div class="columns featured-post is-multiline">
             <div class="column is-12 post">
               <article class="columns featured">
-                <div class="column is-7 post-img ">
+                <div class="column is-7 post-img">
 
-                  <form>
-                        <div class="field is-grouped">
-                            <p class="control is-small">
-                              <input id="stock" class="input" type="text" placeholder="Enter Company's Name">
-                            </p>
-                            <p class="control is-small">
-                              <input id="city" class="input" type="text" placeholder="Search City">
-                            </p>
-                            <p class="control">
-                                <a id ="Search" class="button is-primary">
-                                    Search
-                                </a>
-                            </p>
-                        </div>
-                      </form>
-                     
-                      <br>
-                      <div id="stockName" style="text-align: center;"></div>
-                  <img id="stockImg" class = "img" src="https://cdn.emk.dev/templates/featured-image.png" alt="">
+                  <form id="tryingCenter">
+                    <div class="field is-grouped has-text-centered">
+                      <p class="control is-small">
+                        <input id="stock" class="input" type="text" placeholder="Enter Company's Name">
+                      </p>
+                      <p class="control is-small">
+                        <input id="city" class="input" type="text" placeholder="Enter Zipcode">
+                      </p>
+                      <p class="control">
+                        <a id="search" class="button is-primary">Search</a>
+                      </p>
+                    </div>
+                  </form>
+                  
+                <br>
+                  <div class="has-text-centered">
+                    <div id="stockName"></div>
+                    <img id="stockImg" class="img hide" src="https://cdn.emk.dev/templates/featured-image.png" alt="Company Logo">
+                  </div>
                 </div>
                 <div class="column is-7 featured-content va">
                   <div id="stockSearch">
@@ -95,7 +90,8 @@
             </div>
           </div>
           <hr>
-          <h3 id="yelp">Yelp recommendation</h3>
+          <h3 id="yelp">Yelp Recommendation <i class="fa fa-yelp"></i></h3>
+          
           <div class="columns is-multiline">
             <div class="column post is-6">
               <article class="columns is-multiline">
@@ -127,29 +123,22 @@
             </div>
             <div class="column post is-6">
               <article class="columns is-multiline">
-                <div class="card">
-                    <div class="card-image">
-                      <figure class="image is-4by3">
-                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                      </figure>
+                <div class="card hide">
+                  <div class="card-image">
+                    
+                    <img id="img1" src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    
+                  </div>
+                  <div class="card-content">
+                    <div class="media">
+                      <div class="media-left">
+                      </div>
+                      <div class="media-content">
+                        <p id="name1" class="Name is-4"></p>
+                      </div>
                     </div>
-                    <div class="card-content">
-                      <div class="media">
-                        <div class="media-left">
-                        </div>
-                        <div class="media-content">
-                          <p id ="Nam" class="Name is-4">Res' Name</p>
-                          <p class="LName is-6">rating star</p>
-                        </div>
-                      </div>
-                  
-                      <div class="Content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                        <a href="#">#css</a> <a href="#">#responsive</a>
-                        <br>
-                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                      </div>
+                    <div id="content1" class="Content">
+                      <br>
                     </div>
                   </div>
               </article>
@@ -243,17 +232,8 @@
           </div>
         </div>
       </div>
-
   </section>
 
-  <footer class="footer is-black">
-    <div class="content has-text-centered">
-      <p>
-        Made by group 3
-      </p>
-    </div>
-
-  </footer> 
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="app.js"></script>

@@ -5,4 +5,158 @@
 
 #nam {
     color: aquamarine;
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Nunito+Sans:wght@400;600&display=swap');
+
+.va {
+  display: flex;
+  align-items: center;
+}
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: black;
+  height: 100%;
+}
+
+a {
+  color: #3b7adf;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3b7adf;
+  opacity: .5;
+}
+
+hr {
+  background: #24272c;
+}
+
+footer {
+    background-color: black;
+}
+
+.hero {
+  background: #060606;
+}
+
+.title,
+.subtitle {
+  color: white;
+}
+
+
+.navbar .navbar-item {
+  color: #e4e2ff;
+}
+
+.navbar .navbar-item.is-active {
+  color: #e4e2ff;
+  font-weight: 700;
+}
+
+.navbar .navbar-item:hover {
+  background: transparent;
+  color: white;
+}
+
+.navbar .navbar-item a {
+  margin-left: 1rem;
+  color: #e4e2ff;
+}
+
+.blog-posts {
+  min-height: 100vh;
+  background: #191b1f;
+  padding-top: 1rem;
+  padding-bottom: 10rem;
+}
+
+.blog-posts article {
+  padding: 1.5rem;
+}
+
+.blog-posts .post img {
+  border-radius: 1px;
+}
+
+.blog-posts .post .post-category {
+  color: #3b7adf;
+}
+
+.blog-posts .post .post-title {
+  font-size: 2.2rem;
+}
+
+#yelp {
+ text-align: center;
+ font-size: 2.2rem;
+ color: white;
+ font-family: 'Nunito Sans', sans-serif;
+ text-decoration: underline;
+ color: rgb(221, 80, 80);
+}
+
+.blog-posts .post .post-excerpt {
+  line-height: 1.5rem;
+  letter-spacing: .03rem;
+  font-size: 1.2rem;
+  font-family: 'IBM Plex Serif', serif;
+  color: #92a3ab;
+}
+
+.blog-posts .post .featured .featured-image img {
+  height: 380px;
+}
+
+.Name,
+.LName {
+    color: black;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#Nam {
+    font-size: large;
+    text-align: center;
+}
+
+.subtitle {
+  font: bolder;
+}
+
+.img {
+height: 300px;
+width: 490px;
+}
+
+.footer {
+  font-size: large;
+  color: #060606;
+}
+
+#stockStats {
+  color: white;
+  line-height: 4rem;
+}
+
+#stockName {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  padding-bottom: .5rem;
+}
+
+#stockStats {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+}
+
+.card-content,
+.card-image {
+  flex-basis: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }

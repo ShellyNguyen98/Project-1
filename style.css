@@ -17,6 +17,7 @@ a {
 a:hover {
   text-decoration: underline;
   color: #3b7adf;
+  opacity: .5;
 }
 
 hr {
@@ -55,7 +56,7 @@ hr {
 .blog-posts {
   min-height: 100vh;
   background: #191b1f;
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 10rem;
 }
 
@@ -80,6 +81,8 @@ hr {
  font-size: 2.2rem;
  color: white;
  font-family: 'Nunito Sans', sans-serif;
+ text-decoration: underline;
+ color: rgb(221, 80, 80);
 }
 
 .blog-posts .post .post-excerpt {
@@ -94,7 +97,6 @@ hr {
   height: 380px;
 }
 
-/* Restaurant name and rating stars - class*/
 .Name,
 .LName {
     color: black;
@@ -108,7 +110,8 @@ hr {
 
 .subtitle {
   font: bolder;
-  font-size: xx-large;
+  font-size: 60px;
+  font-family: 'Amatic SC', cursive;
 }
 
 .img {
@@ -124,24 +127,21 @@ width: 490px;
   color: #060606;
 }
 
-
-
-/* search button id=Search, 
-stock name id=Title,
-info of stock id= listInfo
-yelp recommendation info class= Content
-company enter searc id=Company
-zipcode id = Zipcode */
-
-/* 324-243 yelp
-200-150 */
-
 #stockStats {
-  color: white
+  color: white;
+  line-height: 4rem;
 }
 
 #stockName {
   text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  padding-bottom: .5rem;
+}
+
+#stockStats {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
 }
 
 .card-content,
@@ -166,12 +166,46 @@ zipcode id = Zipcode */
   object-fit: cover;
 }
 
-/* .card-image {
-  height: 521.98px;
-  width: 391.48px;
-  object-fit: cover;
-} */
-
 .hide {
   display: none;
+}
+
+#stockImg {
+  width: auto;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+#tryingCenter {
+  margin-left: 4rem;
+}
+
+.resName {
+  font-size: 25px;
+  color: blue;
+  font-weight: bold;
+}
+
+.info {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
+
+.poor {
+  font-family: 'Indie Flower', cursive;
+}
+
+.regular {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.rich {
+  font-family: 'Dancing Script', cursive;
 }
