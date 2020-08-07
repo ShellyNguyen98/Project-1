@@ -45,6 +45,8 @@ footer {
 .title,
 .subtitle {
   color: white;
+  font-weight: bold;
+  line-height: 2rem;
 }
 
 
