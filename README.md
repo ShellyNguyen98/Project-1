@@ -27,3 +27,5 @@ The website uses 2 APIs:
 </br>
 
 **Link to the website:** https://shellynguyen98.github.io/Project-1/
+</br>
+![Website Image](https://github.com/ShellyNguyen98/Project-1/blob/master/logo/bite-wallet.png)
